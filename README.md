@@ -31,13 +31,17 @@ Books	Stores details about books in the library
 Customer	Stores customer registration details
 IssueStatus	Records details of books issued to customers
 ReturnStatus	Records details of returned books
-🏗️ Database Schema
+🏗️ Database Schema.
+
+
 1️⃣ Branch
 Column	Description
 Branch_no (PK)	Unique branch number
 Manager_Id	ID of the branch manager
 Branch_address	Address of the branch
 Contact_no	Contact number
+
+
 2️⃣ Employee
 Column	Description
 Emp_Id (PK)	Employee ID
@@ -45,6 +49,8 @@ Emp_name	Employee name
 Position	Job position
 Salary	Employee salary
 Branch_no (FK)	Branch reference
+
+
 3️⃣ Books
 Column	Description
 ISBN (PK)	Unique book identifier
@@ -54,12 +60,16 @@ Rental_Price	Book rental price
 Status	Availability status (Yes/No)
 Author	Book author
 Publisher	Book publisher
+
+
 4️⃣ Customer
 Column	Description
 Customer_Id (PK)	Customer ID
 Customer_name	Customer name
 Customer_address	Customer address
 Reg_date	Registration date
+
+
 5️⃣ IssueStatus
 Column	Description
 Issue_Id (PK)	Issue record ID
@@ -67,6 +77,8 @@ Issued_cust (FK)	Customer who issued the book
 Issued_book_name	Name of issued book
 Issue_date	Date of issue
 Isbn_book (FK)	Book ISBN
+
+
 6️⃣ ReturnStatus
 Column	Description
 Return_Id (PK)	Return record ID
@@ -74,6 +86,7 @@ Return_cust	Customer returning the book
 Return_book_name	Name of returned book
 Return_date	Return date
 Isbn_book2 (FK)	Book ISBN
+
 🔍 SQL Queries Implemented
 
 The project includes SQL queries for the following operations:
